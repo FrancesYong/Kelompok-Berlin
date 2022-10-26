@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise #01</h1>
+    <pre>Buat latihan tentang JavaScript String:
+    - concat
+    - includes
+    - length
+    - split
+    - slice
+    - substring
+    - toLowerCase
+    - toUpperCase
+    - trim
+    - valueOf
+    </pre>
+
+    <p><strong>concat()</strong></p>
+    <p id="concat"></p>
+    <script>
+        let text1 = "Frances";
+        let text2 = "Yong";
+        let text3 = text1.concat(" ",text2);
+        document.getElementById("concat").innerHTML = text3;
+    </script>
+
+    <p><strong>includes()</strong></p>
+    <p id="includes"></p>
+    <script>
+        let text = "Seorang sahabat yang baik";
+        let result = text.includes("sahabat");
+        document.getElementById("includes").innerHTML = result;
+    </script>
+
+    <p><strong>length()</strong></p>
+    <p>mengembalikan string:</p>
+    <p id="length"></p>
+    <script>
+        let text4 = "Segala perkara dapat ku tanggung didalam Dia...";
+        document.getElementById("length").innerHTML = text4.length;
+    </script>
+
+    <p><strong>split()</strong></p>
+    <p>String setelah di split:</p>
+    <p id="split"></p>
+    <script>
+        let text5 = "a,b,c ,d,e|f";
+        const myArray = text5.split(" ");
+        document.getElementById("split").innerHTML = myArray[0];
+    </script>
+    
+    <p><strong>slice()</strong></p>
+    <p>mengembalikan string baru:</p>
+    <p id="slice"></p>
+    <script>
+        let str = "Frances, Geovalga, Edwin";
+        document.getElementById("slice").innerHTML = str.slice(9,17); 
+    </script>
+
+    <p><strong>substring()</strong></p>
+    <p>mengembalikan string baru:</p>
+    <p id="substring"></p>
+    <script>
+        let str1 = "Frances, Geovalga, Edwin";
+        document.getElementById("substring").innerHTML = str1.substring(9,17); 
+    </script>
+
+    <p><strong>toLowerCase()</strong></p>
+    <p id="toLowerCase"></p>
+    <script>
+        let str2 = "Saya ingin menjadi web developer";
+        document.getElementById("toLowerCase").innerHTML = str2.toLowerCase(9,17); 
+    </script>
+
+    <p><strong>toUpperCase()</strong></p>
+    <p id="toUpperCase"></p>
+    <script>
+        let str3 = "Saya ingin menjadi web developer";
+        document.getElementById("toUpperCase").innerHTML = str3.toUpperCase(9,17); 
+    </script>
+
+    <p><strong>trim()</strong></p>
+    <p id="trim"></p>
+    <script>
+        let text6 = "     Hello World!     ";
+        let text7 = text4.trim();
+        document.getElementById("trim").innerHTML =
+        "Panjang text1 = " + text6.length + "<br>Panjang text2 = " + text7.length;
+    </script>
+
+    <p><strong>valueOf()</strong></p>
+    <p>mengembalikan nilai primitif dari sebuah string:</p>
+    <script>
+        var a = new String("Frances Yong");
+        document.write(a.valueOf());
+    </script>
+
+</body>
+</html>
